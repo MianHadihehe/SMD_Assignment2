@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="delete_icon_dimen">25dp</dimen>
+    <dimen name="heading_padding">10dp</dimen>
+    <dimen name="trash_icon_margin_right">10dp</dimen>
+    <dimen name="headingSize">20sp</dimen>
+    <dimen name="text_padding">50dp</dimen>
+    <dimen name="float_marginRight">50dp</dimen>
+    <dimen name="float_marginBottom">100dp</dimen>
+    <dimen name="addNewMargin">10dp</dimen>
+    <dimen name="boxCornerRadius">16dp</dimen>
+    <dimen name="logo_dimen">130dp</dimen>
+    <dimen name="list_horizontal_padding">22dp</dimen>
+</resources>

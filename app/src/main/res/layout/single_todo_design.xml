@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="@dimen/list_horizontal_padding"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eat Breakfast"
+            android:padding="@dimen/heading_padding"
+            android:textSize="@dimen/headingSize"
+            android:textStyle="bold"
+            android:id="@+id/tvHeading"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="at time hortons with adeen adeen adeen adeen adeen"
+            android:paddingStart="@dimen/text_padding"
+            android:textSize="16sp"
+            android:id="@+id/tvDescription"
+            />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="@dimen/delete_icon_dimen"
+        android:layout_height="@dimen/delete_icon_dimen"
+        android:src="@drawable/delete_icon"
+        android:layout_marginRight="@dimen/trash_icon_margin_right"
+        android:layout_marginTop="@dimen/trash_icon_margin_right"
+        app:tint="@color/red"
+        android:backgroundTint="@color/white"
+        android:id="@+id/btnDelete"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SMD_Assignment2</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="todos_headings">
+        <item>Give evaluation</item>
+        <item>Submit project report</item>
+        <item>Attend team meeting</item>
+    </string-array>
+    <string-array name="todos_descriptions">
+        <item>Prepare evaluation for 30 Sep 2024</item>
+        <item>Project report due by 1 Oct 2024</item>
+        <item>Meeting scheduled at 10 AM</item>
+    </string-array>
+    <string-array name="dones_headings">
+        <item>Finish Android assignment</item>
+        <item>Submit the final draft</item>
+    </string-array>
+    <string-array name="dones_descriptions">
+        <item>Completed on 29 Sep 2024</item>
+        <item>Submitted to professor on 28 Sep 2024</item>
+    </string-array>
+</resources>
