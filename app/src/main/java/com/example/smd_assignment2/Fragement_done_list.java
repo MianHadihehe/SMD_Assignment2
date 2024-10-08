@@ -1,5 +1,7 @@
 package com.example.smd_assignment2;
 
+import static android.content.ContentValues.TAG;
+
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +9,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.util.Log;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -53,11 +57,13 @@ public class Fragement_done_list extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        Log.d(TAG, "onCreate called for done list frag");
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        Log.d(TAG, "onCreateView called for done frag");
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_fragement_done_list, container, false);
     }

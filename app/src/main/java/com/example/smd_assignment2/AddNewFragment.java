@@ -1,5 +1,7 @@
 package com.example.smd_assignment2;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Context;
 import android.os.Bundle;
 
@@ -7,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,11 +43,13 @@ public class AddNewFragment extends Fragment {
         super.onAttach(context);
         this.context = context;
         parentRef = (OnNewItemAddedListener) context;
+        Log.d(TAG, "onAttach called for add frag");
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate called for add frag");
 
     }
 
@@ -52,12 +57,14 @@ public class AddNewFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        Log.d(TAG, "onCreateView called for add frag");
         return inflater.inflate(R.layout.fragment_add_new, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Log.d(TAG, "onViewCreated called for add frag");
         btnSubmit = view.findViewById(R.id.btn_submit);
         tietHeading = view.findViewById(R.id.input_heading);  // Make sure this ID matches your XML
         tietDescription = view.findViewById(R.id.input_description);
